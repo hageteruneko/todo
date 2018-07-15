@@ -1,0 +1,45 @@
+﻿<p id="notice"><%= notice %></p>
+
+<h1>やること</h1>
+
+<%= search_form_for @search do |f| -%>
+<%= f.label :title_cont, "検索ワード" -%>
+<%= f.search_field :title_cont -%>
+
+  <span class="actions">
+  <%= f.submit "search" %>
+</span>
+
+<div align="right"><%= link_to '新規作成', new_yaru_path %></div>
+<% end %>
+
+
+
+
+<table class="table table-stripped table-hover">
+  <thead>
+    <tr>
+      <th><%= sort_link(@search, :title,[:title,'tt'],"タイトル") %></th>
+      <th><%= sort_link(@search, :dline,[:dline,'dd'],"期限") %></th>
+      <th><%= sort_link(@search, :create,[:create,'c'],"作成日") %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @yarus.each do |yaru| %>
+      <tr class="table-dark">
+        <td><%=link_to yaru.title ,yaru%></td>
+
+        <td><%= yaru.dline %></td>
+        <td><%= yaru.create %></td>
+
+        <td><%= link_to 'Edit', edit_yaru_path(yaru) %></td>
+        <td><%= link_to 'Destroy', yaru, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

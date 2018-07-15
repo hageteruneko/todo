@@ -1,0 +1,2 @@
+class Yaru < ApplicationRecord
+end

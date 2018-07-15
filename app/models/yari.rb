@@ -1,0 +1,2 @@
+class Yari < ApplicationRecord
+end

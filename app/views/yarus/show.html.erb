@@ -1,0 +1,24 @@
+﻿<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル</strong>
+  <%= @yaru.title %>
+</p>
+
+<p>
+  <strong>内容</strong>
+  <%= @yaru.content %>
+</p>
+
+<p>
+  <strong>期限</strong>
+  <%= @yaru.dline %>
+</p>
+
+<p>
+  <strong>作成日</strong>
+  <%= @yaru.create %>
+</p>
+
+<%= link_to 'Edit', edit_yaru_path(@yaru) %> |
+<%= link_to 'Back', yarus_path %>

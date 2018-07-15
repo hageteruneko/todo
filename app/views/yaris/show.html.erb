@@ -1,0 +1,19 @@
+﻿<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル</strong>
+  <%= @yari.title %>
+</p>
+
+<p>
+  <strong>内容</strong>
+  <%= @yari.content %>
+</p>
+
+<p>
+  <strong>作成日</strong>
+  <%= @yari.term %>
+</p>
+
+<%= link_to 'Edit', edit_yari_path(@yari) %> |
+<%= link_to 'Back', yaris_path %>
