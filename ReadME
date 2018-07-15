@@ -17,3 +17,6 @@ ToDo-
   scaffoldでひな形を作り、ransackで機能を追加し、bootswatchで見た目を整える
 ・開発環境のセットアップ 
 bundle installすれば見れると思います。
+
+
+データベースの中には何も入ってないです。
