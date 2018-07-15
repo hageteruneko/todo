@@ -1,0 +1,19 @@
+ToDo-
+・使用した技術要素 
+    ruby on rails 
+      ransack 
+      scaffold 
+    bootstrap 
+      bootswatch
+
+・全体の設計・構成についての説明 
+    UIについて 
+      やることとやりたいことに分かれて構成されている 
+      新規作成でタスクを追加、Editで編集と文字の通りになっている。 
+      タイトルを選択すると内容が見れる 
+      一番上のレコードを選択するとソートができる
+
+設計について
+  scaffoldでひな形を作り、ransackで機能を追加し、bootswatchで見た目を整える
+・開発環境のセットアップ 
+bundle installすれば見れると思います。
